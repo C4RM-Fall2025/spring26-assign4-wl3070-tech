@@ -1,20 +1,16 @@
 
 
 def FizzBuzz(start, finish):
-     outlist = []
-     for n in range(start, finish + 1):
-
-        if n % 3 == 0 and n % 5 == 0:
-            outlist.append('fizzbuzz')
-
+    v = []
+    for n in range(start, finish):  # 注意：finish 不包含
+        if (n % 3 == 0) and (n % 5 == 0):
+            v.append('fizzbuzz')
         elif n % 3 == 0:
-            outlist.append('fizz')
-
+            v.append('fizz')
         elif n % 5 == 0:
-            outlist.append('buzz')
-
+            v.append('buzz')
         else:
-            outlist.append(n)
-
-    return(outlist)
+            v.append(n)
+    return(v)
+     
 
